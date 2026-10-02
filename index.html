@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080808" />
+    <meta
+      name="description"
+      content="An interactive archival horror experience about an impossible image that learns from being observed."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23070707'/%3E%3Cellipse cx='32' cy='32' rx='25' ry='13' fill='%23dedbd1'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%23070707'/%3E%3Ccircle cx='34' cy='29' r='2' fill='%23a51d1d'/%3E%3C/svg%3E"
+    />
+    <title>DO NOT LET IT FINISH LOOKING — Evidence 03-17</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="sealed">
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor-orbit" aria-hidden="true"></div>
+
+    <section class="intake" id="intake" aria-labelledby="intake-title">
+      <div class="intake__card">
+        <p class="eyebrow">ARCHIVE ACCESS / RESTRICTED</p>
+        <div class="case-number" aria-hidden="true">03–17</div>
+        <h1 id="intake-title">Do not let it<br />finish looking.</h1>
+        <p class="intake__copy">
+          This image was recovered from the output tray of an unplugged printer.
+          There is no original photograph.
+        </p>
+        <p class="warning">Unsettling imagery and optional sound. No flashing effects.</p>
+        <button class="button button--primary" id="open-evidence" type="button">
+          <span>Open evidence</span><span aria-hidden="true">[ Enter ]</span>
+        </button>
+        <label class="sound-choice">
+          <input type="checkbox" id="sound-on-entry" />
+          <span>Allow room tone after opening</span>
+        </label>
+      </div>
+      <p class="intake__footer">Recovered 03:17:06 · Terminal 4 · Room unlisted</p>
+    </section>
+
+    <header class="archive-header" aria-label="Evidence status">
+      <a class="wordmark" href="#evidence">EVIDENCE <span>03–17</span></a>
+      <dl class="status-line">
+        <div><dt>Integrity</dt><dd id="integrity">decaying</dd></div>
+        <div><dt>Subject</dt><dd id="subject-status">unresolved</dd></div>
+        <div><dt>Viewers</dt><dd id="viewer-count">1</dd></div>
+      </dl>
+      <button class="icon-button" id="sound-toggle" type="button" aria-pressed="false">
+        Sound: off
+      </button>
+    </header>
+
+    <main>
+      <section class="evidence" id="evidence" aria-labelledby="evidence-title">
+        <div class="evidence__meta reveal-on-open">
+          <p class="eyebrow">FILE // SOURCE: NONE</p>
+          <p>Move carefully. The distortion is not damage. It is depth.</p>
+        </div>
+
+        <div class="scan-shell" id="scan-shell">
+          <div class="scan-image" id="scan-image" role="img" aria-label="A distorted monochrome portrait recovered from an unknown source">
+            <div class="apparition-layer" aria-hidden="true"></div>
+            <div class="scan-lines" aria-hidden="true"></div>
+            <div class="focus-void" id="focus-void" aria-hidden="true"></div>
+            <div class="tracking-label tracking-label--a" aria-hidden="true">POSITION ACCEPTED</div>
+            <div class="tracking-label tracking-label--b" aria-hidden="true">DO NOT IMPROVE</div>
+          </div>
+          <div class="scan-corners" aria-hidden="true"></div>
+          <p class="scan-id">RECOVERED FRAME / 1 OF 1</p>
+          <p class="scan-time" id="scan-time">03:17:06:00</p>
+        </div>
+
+        <div class="evidence__prompt">
+          <p class="instruction" id="evidence-title">Press and hold the dark center.</p>
+          <button class="hold-button" id="hold-focus" type="button">
+            <span class="hold-button__label">Do not focus</span>
+            <span class="hold-button__meter" aria-hidden="true"></span>
+          </button>
+          <div class="focus-readout" aria-live="polite">
+            <span id="focus-status">stabilizing residual image…</span>
+            <span id="focus-percent">00%</span>
+          </div>
+        </div>
+
+        <p class="marginalia marginalia--one" aria-hidden="true">it moved while you were reading</p>
+        <p class="marginalia marginalia--two" aria-hidden="true">keep the door closed</p>
+      </section>
+
+      <section class="transcript section is-locked" id="transcript" aria-labelledby="transcript-title">
+        <div class="section-index">01 / INTERVIEW</div>
+        <div class="transcript__body">
+          <p class="eyebrow">TRANSCRIPT 03-17-B · PARTIAL</p>
+          <h2 id="transcript-title">The answer arrived after the question.</h2>
+          <div class="dialogue" aria-label="Recovered interview transcript">
+            <p data-speaker="ARCHIVIST">Is there someone in the image?</p>
+            <p data-speaker="TECHNICIAN">No.</p>
+            <p data-speaker="ARCHIVIST">Then what are we looking at?</p>
+            <p data-speaker="TECHNICIAN">It’s looking from the other side.</p>
+            <p data-speaker="ARCHIVIST">At what?</p>
+            <p data-speaker="TECHNICIAN">At whoever keeps asking.</p>
+            <p class="subject-line" data-speaker="SUBJECT">You.</p>
+          </div>
+        </div>
+        <aside class="note-card">
+          <span>Handwritten on sleeve:</span>
+          <p>“A portrait records a face. This records the space a face will leave behind.”</p>
+        </aside>
+      </section>
+
+      <section class="calibration section is-locked" id="calibration" aria-labelledby="calibration-title">
+        <div class="section-index">02 / CALIBRATION</div>
+        <div class="calibration__copy">
+          <p class="eyebrow">MANUAL RECOVERY</p>
+          <h2 id="calibration-title">It does not become clearer.<br />It becomes closer.</h2>
+          <p>
+            The archive requires three corrections before the damaged plane can be measured.
+            Directional input is not guaranteed.
+          </p>
+          <div class="proximity-readout" aria-live="polite">
+            <span>Your distance</span><strong id="distance-value">4.72 m</strong>
+          </div>
+        </div>
+        <div class="controls-panel" aria-label="Image calibration controls">
+          <label>
+            <span>Contrast <output id="contrast-output">17</output></span>
+            <input class="calibration-slider" type="range" min="0" max="100" value="17" data-control="contrast" />
+          </label>
+          <label>
+            <span>Depth <output id="depth-output">31</output></span>
+            <input class="calibration-slider" type="range" min="0" max="100" value="31" data-control="depth" />
+          </label>
+          <label>
+            <span>Proximity <output id="proximity-output">08</output></span>
+            <input class="calibration-slider" type="range" min="0" max="100" value="8" data-control="proximity" />
+          </label>
+          <p class="control-message" id="control-message">waiting for correction</p>
+        </div>
+      </section>
+
+      <section class="room-tone section is-locked" id="room-tone" aria-labelledby="room-title">
+        <div class="section-index">03 / AUDIO</div>
+        <div class="waveform" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="room-tone__copy">
+          <p class="eyebrow">RECOVERY AUDIO · 00:19</p>
+          <h2 id="room-title">There was no microphone in the room.</h2>
+          <p id="audio-transcript">The second voice is always the current listener.</p>
+          <div class="audio-actions">
+            <button class="button" id="room-tone-button" type="button">Play room tone</button>
+            <button class="button button--quiet" id="continue-silent" type="button">Continue in silence</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="destruction section is-locked" id="destruction" aria-labelledby="destruction-title">
+        <div class="section-index">04 / DESTRUCTION LOG</div>
+        <div class="destruction__head">
+          <p class="eyebrow">FAILED ATTEMPTS</p>
+          <h2 id="destruction-title">Every method improved the image.</h2>
+        </div>
+        <div class="damage-viewer">
+          <div class="damage-image" id="damage-image" role="img" aria-label="The recovered image under attempted destruction"></div>
+          <div class="damage-log" aria-live="polite">
+            <time id="damage-time">03:21</time>
+            <p id="damage-copy">file deleted</p>
+          </div>
+        </div>
+        <label class="timeline-label" for="damage-timeline">
+          <span>Scrub damage record</span><span id="timeline-count">01 / 06</span>
+        </label>
+        <input id="damage-timeline" class="damage-timeline" type="range" min="0" max="5" value="0" step="1" />
+        <ol class="log-list">
+          <li><time>03:21</time><span>file deleted</span></li>
+          <li><time>03:21</time><span>file returned</span></li>
+          <li><time>03:24</time><span>drive destroyed</span></li>
+          <li><time>03:24</time><span>image printed inside locked archive</span></li>
+          <li><time>03:31</time><span>technician covered the lens</span></li>
+          <li><time>03:34</time><span>technician understood there was no lens</span></li>
+        </ol>
+      </section>
+
+      <section class="closure section is-locked" id="closure" aria-labelledby="closure-title">
+        <p class="eyebrow">END OF AUTHORIZED MATERIAL</p>
+        <h2 id="closure-title">The file is waiting to be closed.</h2>
+        <p>Closing the evidence will release the current observer from the archive.</p>
+        <div class="close-field" id="close-field">
+          <button class="button button--close" id="close-evidence" type="button">Close evidence</button>
+        </div>
+        <p class="attempt-count" id="attempt-count" aria-live="polite">attempts remaining: 3</p>
+      </section>
+    </main>
+
+    <section class="finale" id="finale" aria-labelledby="finale-title" aria-hidden="true">
+      <div class="finale__paper" aria-hidden="true">
+        <div class="finale__impression"></div>
+      </div>
+      <div class="finale__message">
+        <p class="eyebrow">RECOVERY COMPLETE</p>
+        <dl>
+          <div><dt>Source</dt><dd>This display</dd></div>
+          <div><dt>Subject</dt><dd id="final-subject">Current observer</dd></div>
+          <div><dt>Viewers</dt><dd>1</dd></div>
+        </dl>
+        <h2 id="finale-title" tabindex="-1">The figure was never trapped in the picture.</h2>
+        <p class="finale__explanation">The picture is what remains after it comes through.</p>
+        <p class="behind-you">If you hear the printer behind you, do not wait for the second page.</p>
+        <button class="button" id="restart" type="button">Let the next person in</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
