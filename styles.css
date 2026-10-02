@@ -295,6 +295,12 @@ body.focus-complete .tracking-label--b { animation-delay: 2.2s; }
 .hold-button:hover, .hold-button:focus-visible { border-color: var(--paper); outline: none; }
 .hold-button:disabled { background: var(--paper); color: var(--ink); opacity: 1; }
 .hold-button:disabled .hold-button__meter { display: none; }
+body.focus-complete .hold-button {
+  background-color: var(--paper) !important;
+  color: var(--ink) !important;
+  -webkit-text-fill-color: var(--ink);
+}
+body.focus-complete .hold-button__label { color: var(--ink); mix-blend-mode: normal; }
 .hold-button__label { position: relative; z-index: 2; }
 .hold-button__meter { position: absolute; inset: 0 auto 0 0; width: var(--focus-progress); background: var(--paper); mix-blend-mode: difference; }
 .focus-readout { display: flex; justify-content: space-between; gap: 1rem; max-width: 16rem; margin-top: .8rem; color: #68665f; font-size: .68rem; }
